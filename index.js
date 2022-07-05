@@ -15,8 +15,4 @@ app.use(cors());
 app.use(helmet());
 app.use(errorHandler)
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'build', 'index.html'))
-})
-
 app.listen(port, console.log(`Server is starting on ${port}...`));
